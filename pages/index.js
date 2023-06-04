@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 
 export default function Home() {
+  const handleSubmit = () => {};
   return (
     <>
       <Head>
@@ -21,40 +22,23 @@ export default function Home() {
           <Heading size={"2xl"} color={"primary.500"} textAlign={"center"}>
             TK Turns 35!
           </Heading>
-          <Box>
-            <Heading>Freestyle Friday</Heading>
-            <Text>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at
-              cupiditate eum, eveniet incidunt laudantium non numquam omnis
-              possimus qui quia quod reiciendis rem, saepe sapiente velit,
-              voluptatibus voluptatum? Soluta.
-            </Text>
-          </Box>
-          <Box>
-            <Heading>Skyfall Saturday</Heading>
-            <Text>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at
-              cupiditate eum, eveniet incidunt laudantium non numquam omnis
-              possimus qui quia quod reiciendis rem, saepe sapiente velit,
-              voluptatibus voluptatum? Soluta.
-            </Text>
-          </Box>
-          <Box>
-            <Heading>Sober-Up Sunday</Heading>
-            <Text>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at
-              cupiditate eum, eveniet incidunt laudantium non numquam omnis
-              possimus qui quia quod reiciendis rem, saepe sapiente velit,
-              voluptatibus voluptatum? Soluta.
-            </Text>
-          </Box>
-          <Box>
-            <Heading>RSVP!</Heading>
-            <FormControl>
-              <FormLabel>Enter your Name to RSVP</FormLabel>
-              <Input type="email" />
-            </FormControl>
-          </Box>
+          <Heading>Freestyle Friday</Heading>
+          <Heading size={"sm"}>AFTERNOON</Heading>
+          <Text>Hotel Suite</Text>
+          <Text mb={4}>Check-in at 3PM NYNY Hotel and Casino</Text>
+          <Text>3790 S Las Vegas Blvd, Las Vegas, NV 89109</Text>
+          <Text mb={8}>Join me for Drinks, Games, and Music.</Text>
+          <Heading size={"sm"}>EVENING</Heading>
+          <Text>After Dark we’ll explore the Vegas Strip</Text>
+          <Text mb={4}>Light gambling grab a quick dinner Dress: Comfy</Text>
+          <Text mb={8}>(Contact me for current location)</Text>
+          <Heading>Skyfall Saturday</Heading>
+          <Heading>Sober-Up Sunday</Heading>
+          <Heading>RSVP!</Heading>
+          <FormControl>
+            <FormLabel>Enter your Name to RSVP</FormLabel>
+            <Input type="email" />
+          </FormControl>
         </Container>
       </main>
     </>

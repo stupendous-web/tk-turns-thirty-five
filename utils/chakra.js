@@ -60,11 +60,6 @@ const theme = extendTheme({
         mb: 8,
       },
     },
-    Text: {
-      baseStyle: {
-        mb: 4,
-      },
-    },
     Link: {
       baseStyle: {
         color: "primary.500",
