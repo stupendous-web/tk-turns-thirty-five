@@ -10,18 +10,23 @@ import {
   Button,
 } from "@chakra-ui/react";
 import axios from "axios";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   const [names, setNames] = useState([]);
   const [name, setName] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
+  useEffect(() => {
+    axios.get("/api/names").then((response) => setNames(response.data));
+  });
+
   const handleSubmit = (event) => {
     event.preventDefault();
     setIsLoading(true);
     axios.post("/api/names", { name }).then(() => {
       setNames([...names, name]);
+      setName("");
       setIsLoading(false);
     });
   };
@@ -87,6 +92,13 @@ export default function Home() {
               discounts or meeting details
             </Text>
             <Heading>RSVP!</Heading>
+            <Text>
+              {names?.map((name) => (
+                <Text key={name.name} as={"span"}>
+                  ** {name.name} **&nbsp;&nbsp;
+                </Text>
+              ))}
+            </Text>
           </Flex>
           <form onSubmit={(event) => handleSubmit(event)}>
             <FormControl isRequired>

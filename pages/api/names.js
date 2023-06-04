@@ -8,6 +8,14 @@ export default async function handler(request, response) {
   await client.connect();
 
   switch (method) {
+    case "GET":
+      await collection
+        .aggregate([])
+        .toArray()
+        .then((results) => response.json(results))
+        .catch((error) => response.status(422).json(error))
+        .finally(() => client.close());
+      break;
     case "POST":
       await collection
         .insertOne({ ...body })
