@@ -1,5 +1,13 @@
 import Head from "next/head";
-import { Box, Container, Heading, SimpleGrid } from "@chakra-ui/react";
+import {
+  Box,
+  Container,
+  FormControl,
+  FormLabel,
+  Heading,
+  Input,
+  Text,
+} from "@chakra-ui/react";
 
 export default function Home() {
   return (
@@ -9,24 +17,44 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main>
-        <Container maxW={"container.sm"} pt={16}>
-          <Heading color={"primary.500"} textAlign={"center"}>
+        <Container maxW={"container.sm"} py={16}>
+          <Heading size={"2xl"} color={"primary.500"} textAlign={"center"}>
             TK Turns 35!
           </Heading>
-          <SimpleGrid columns={2} spacing={4}>
-            <Box>
+          <Box>
+            <Heading>Freestyle Friday</Heading>
+            <Text>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at
               cupiditate eum, eveniet incidunt laudantium non numquam omnis
               possimus qui quia quod reiciendis rem, saepe sapiente velit,
               voluptatibus voluptatum? Soluta.
-            </Box>
-            <Box>
+            </Text>
+          </Box>
+          <Box>
+            <Heading>Skyfall Saturday</Heading>
+            <Text>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at
               cupiditate eum, eveniet incidunt laudantium non numquam omnis
               possimus qui quia quod reiciendis rem, saepe sapiente velit,
               voluptatibus voluptatum? Soluta.
-            </Box>
-          </SimpleGrid>
+            </Text>
+          </Box>
+          <Box>
+            <Heading>Sober-Up Sunday</Heading>
+            <Text>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at
+              cupiditate eum, eveniet incidunt laudantium non numquam omnis
+              possimus qui quia quod reiciendis rem, saepe sapiente velit,
+              voluptatibus voluptatum? Soluta.
+            </Text>
+          </Box>
+          <Box>
+            <Heading>RSVP!</Heading>
+            <FormControl>
+              <FormLabel>Enter your Name to RSVP</FormLabel>
+              <Input type="email" />
+            </FormControl>
+          </Box>
         </Container>
       </main>
     </>
