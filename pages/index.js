@@ -7,10 +7,25 @@ import {
   Input,
   Text,
   Flex,
+  Button,
 } from "@chakra-ui/react";
+import axios from "axios";
+import { useState } from "react";
 
 export default function Home() {
-  const handleSubmit = () => {};
+  const [names, setNames] = useState([]);
+  const [name, setName] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setIsLoading(true);
+    axios.post("/api/names", { name }).then(() => {
+      setNames([...names, name]);
+      setIsLoading(false);
+    });
+  };
+
   return (
     <>
       <Head>
@@ -73,10 +88,24 @@ export default function Home() {
             </Text>
             <Heading>RSVP!</Heading>
           </Flex>
-          <FormControl>
-            <FormLabel>Enter your Name to RSVP</FormLabel>
-            <Input type="email" />
-          </FormControl>
+          <form onSubmit={(event) => handleSubmit(event)}>
+            <FormControl isRequired>
+              <FormLabel>Enter your Name to RSVP</FormLabel>
+              <Input
+                type={"text"}
+                value={name}
+                onChange={(event) => setName(event.currentTarget.value)}
+                mb={4}
+              />
+              <Button
+                type={"submit"}
+                colorScheme={"primary"}
+                isLoading={isLoading}
+              >
+                Add
+              </Button>
+            </FormControl>
+          </form>
         </Container>
       </main>
     </>
