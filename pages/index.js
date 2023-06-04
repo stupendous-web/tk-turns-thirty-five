@@ -38,7 +38,7 @@ export default function Home() {
             <Heading size={"sm"}>AFTERNOON</Heading>
             <Text mb={8}>Explore Area 15 with us!</Text>
             <Text>Area 15 is Kid Friendly</Text>
-            <Text>
+            <Text mb={4}>
               Tickets normally start at $35 (They have been known to have free
               entry)
             </Text>
@@ -46,13 +46,18 @@ export default function Home() {
             <Text>Las Vegas, NV 89102</Text>
             <Text mb={8}>Saturday afternoon (2PM)</Text>
             <Heading size={"sm"}>EVENING</Heading>
-            <Text>**Main Event**</Text>
-            <Text>
-              Food and Drinks at SkyFall lounge Located at Delano Hotel Open
-              bar. Please RSVP 21 yrs or older only 3940 S Las Vegas Blvd, Las
-              Vegas, NV 89119 Reservation: 7PM Dress: Casual
-            </Text>
+            <Text mb={4}>**Main Event**</Text>
+            <Text>Food and Drinks at SkyFall lounge</Text>
+            <Text>Located at Delano Hotel</Text>
+            <Text>Open bar. Please RSVP</Text>
+            <Text mb={4}>21 yrs or older only</Text>
+            <Text>3940 S Las Vegas Blvd</Text>
+            <Text>Las Vegas, NV 89119 Reservation: 7PM Dress: Casual</Text>
             <Heading>Sober-Up Sunday</Heading>
+            <Text>
+              Contact me via Phone, Text, Teams or Facebook Messenger for hotel
+              discounts or meeting details
+            </Text>
             <Heading>RSVP!</Heading>
           </Flex>
           <FormControl>

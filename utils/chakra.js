@@ -39,7 +39,7 @@ const theme = extendTheme({
   },
   fonts: {
     heading: "transducer, sans-serif",
-    body: "transducer, sans-serif",
+    body: "arial, sans-serif",
   },
   radii: {
     none: 0,
