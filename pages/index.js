@@ -37,7 +37,14 @@ export default function Home() {
         <title>TK Turns 35!</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <main>
+      <main
+        style={{
+          backgroundImage: "url('/Background.jpg')",
+          backgroundRepeat: "no-repeat",
+          backgroundAttachment: "fixed",
+          backgroundPosition: "center",
+        }}
+      >
         <Container maxW={"container.sm"} py={16}>
           <Flex direction={"column"} align={"center"}>
             <Heading size={"2xl"} color={"primary.500"}>
@@ -87,12 +94,12 @@ export default function Home() {
             <Text>(First come first serve)</Text>
             <Text>Ask for “T.K.” at</Text>
             <Text mb={4}>the hostess stand</Text>
-            <Text textAlign={"center"}>
+            <Text textAlign={"center"} mb={4}>
               Contact me via Phone, Text, Teams or Facebook Messenger for hotel
               discounts or meeting details
             </Text>
             <Heading>RSVP!</Heading>
-            <Text>
+            <Text mb={4}>
               {names?.map((name) => (
                 <Text key={name.name} as={"span"}>
                   ** {name.name} **&nbsp;&nbsp;
