@@ -1,6 +1,5 @@
 import Head from "next/head";
 import {
-  Box,
   Container,
   FormControl,
   FormLabel,
@@ -27,24 +26,27 @@ export default function Home() {
             <Heading>Freestyle Friday</Heading>
             <Heading size={"sm"}>AFTERNOON</Heading>
             <Text>Hotel Suite</Text>
-            <Text mb={4}>Check-in at 3PM NYNY Hotel and Casino</Text>
-            <Text>3790 S Las Vegas Blvd, Las Vegas, NV 89109</Text>
-            <Text mb={8}>Join me for Drinks, Games, and Music.</Text>
+            <Text mb={4}>Check-in at 3PM</Text>
+            <Text>NYNY Hotel and Casino</Text>
+            <Text mb={4}>3790 S Las Vegas Blvd, Las Vegas, NV 89109</Text>
+            <Text mb={4}>Join me for Drinks, Games, and Music.</Text>
             <Heading size={"sm"}>EVENING</Heading>
             <Text>After Dark we’ll explore the Vegas Strip</Text>
-            <Text mb={4}>Light gambling grab a quick dinner Dress: Comfy</Text>
-            <Text mb={8}>(Contact me for current location)</Text>
+            <Text mb={4} textAlign={"center"}>
+              Light gambling grab a quick dinner Dress: Comfy
+            </Text>
+            <Text mb={4}>(Contact me for current location)</Text>
             <Heading>Skyfall Saturday</Heading>
             <Heading size={"sm"}>AFTERNOON</Heading>
-            <Text mb={8}>Explore Area 15 with us!</Text>
+            <Text mb={4}>Explore Area 15 with us!</Text>
             <Text>Area 15 is Kid Friendly</Text>
-            <Text mb={4}>
+            <Text mb={4} textAlign={"center"}>
               Tickets normally start at $35 (They have been known to have free
               entry)
             </Text>
             <Text>3215 S Rancho Dr,</Text>
             <Text>Las Vegas, NV 89102</Text>
-            <Text mb={8}>Saturday afternoon (2PM)</Text>
+            <Text mb={4}>Saturday afternoon (2PM)</Text>
             <Heading size={"sm"}>EVENING</Heading>
             <Text mb={4}>**Main Event**</Text>
             <Text>Food and Drinks at SkyFall lounge</Text>
@@ -52,9 +54,20 @@ export default function Home() {
             <Text>Open bar. Please RSVP</Text>
             <Text mb={4}>21 yrs or older only</Text>
             <Text>3940 S Las Vegas Blvd</Text>
-            <Text>Las Vegas, NV 89119 Reservation: 7PM Dress: Casual</Text>
+            <Text>Las Vegas, NV 89119</Text>
+            <Text>Reservation: 7PM</Text>
+            <Text mb={4}>Dress: Casual</Text>
             <Heading>Sober-Up Sunday</Heading>
-            <Text>
+            <Heading size={"sm"}>AFTERNOON</Heading>
+            <Text mb={4}>Brunch at PepperMill</Text>
+            <Text>2985 Las Vegas Blvd S</Text>
+            <Text mb={4}>Las Vegas, NV 89109</Text>
+            <Text>12:00PM</Text>
+            <Text>No Reservation</Text>
+            <Text>(First come first serve)</Text>
+            <Text>Ask for “T.K.” at</Text>
+            <Text mb={4}>the hostess stand</Text>
+            <Text textAlign={"center"}>
               Contact me via Phone, Text, Teams or Facebook Messenger for hotel
               discounts or meeting details
             </Text>

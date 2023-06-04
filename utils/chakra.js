@@ -32,14 +32,15 @@ const theme = extendTheme({
       "html, body": {
         bg: "black",
         color: "gray.100",
+        fontWeight: 300,
         overflowX: "hidden",
         lineHeight: 2,
       },
     },
   },
   fonts: {
-    heading: "transducer, sans-serif",
-    body: "arial, sans-serif",
+    heading: "Ubuntu, sans-serif",
+    body: "Ubuntu, sans-serif",
   },
   radii: {
     none: 0,
@@ -56,8 +57,13 @@ const theme = extendTheme({
     Heading: {
       baseStyle: {
         color: "white",
-        fontWeight: "bold",
+        fontWeight: 700,
         mb: 8,
+      },
+    },
+    Text: {
+      baseStyle: {
+        fontWeight: 300,
       },
     },
     Link: {
